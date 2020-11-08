@@ -13,8 +13,12 @@ function handleClick(e) {
 /* Write your implementation of displayMessage() */
 
 var time = prompt("enter the time using international time");
-  if (time >= 1 && time <= 13){
+  if (time >= 1 && time <= 12){
   document.getElementById("time").innerHTML = 
+  "Good Morning"
+  }
   
+  else if 
+  (time >= 13 && time <= 17){
     
   }
