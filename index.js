@@ -14,11 +14,12 @@ function handleClick(e) {
 
 var time = prompt("enter the time using international time");
   if (time >= 1 && time <= 12){
-  document.getElementById("time").innerHTML = 
-  "Good Morning"
+    document.getElementById("time").innerHTML = 
+      "Good Morning"
   }
   
   else if 
-  (time >= 13 && time <= 17){
-    
+    (time >= 13 && time <= 17){
+    document.getElementById("time").innerHTML = 
+      "Good afternoon"
   }
