@@ -12,18 +12,16 @@ function handleClick(e) {
 /* Write your implementation of greet() */
 /* Write your implementation of displayMessage() */
 
-var time = prompt("enter the time using international time");
-  if (time >= 1 && time <= 12){
-    document.getElementById("time").innerHTML = 
-      "Good Morning"
-  }
-  
-  else if 
-    (time >= 13 && time <= 17){
-    document.getElementById("time").innerHTML = 
-      "Good afternoon"
-  }
-  else {
-    document.getElementById("time").innerHTML = 
-      "Good evening"
-  }
+function greet(string) {
+  let splitString = string.split(':')
+  let time = splitString[0]
+  let newTime = parseInt(time, 10)
+
+  if (newTime < 12) return "Good Morning"
+  if (newTime > 17) return "Good Evening"
+  return "Good Afternoon"
+}
+
+function displayMessage(greeting) {
+  document.getElementById("greeting").innerText = greeting
+}
