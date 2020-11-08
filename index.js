@@ -23,3 +23,7 @@ var time = prompt("enter the time using international time");
     document.getElementById("time").innerHTML = 
       "Good afternoon"
   }
+  else {
+    document.getElementById("time").innerHTML = 
+      "Good evening"
+  }
