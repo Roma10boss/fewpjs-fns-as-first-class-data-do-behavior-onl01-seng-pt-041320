@@ -12,4 +12,5 @@ function handleClick(e) {
 /* Write your implementation of greet() */
 /* Write your implementation of displayMessage() */
 
-var time= prompt("enter the time using international time");
+var time = prompt("enter the time using international time");
+  if time >= 1 && time <= 13 
